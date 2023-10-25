@@ -1,0 +1,12 @@
+[Unit]
+Description=Matrix Bot
+
+[Service]
+StandardOutput=journal
+ExecStart=run-bot.sh
+RuntimeMaxSec=10800s
+Restart=always
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

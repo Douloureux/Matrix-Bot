@@ -1,0 +1,6 @@
+[Unit]
+Description=Check for updates and report results
+
+[Service]
+Type=oneshot
+ExecStart=update-check.sh
